@@ -13,7 +13,6 @@
                 $navElements = scandir($path);
                 for($i = 2; $i < count($navElements); $i++):
                     $navElement = str_replace(".php", "", $navElements[$i]); ?>
-                    
                     <li class='nav-item'>
                         <a class='nav-link active' aria-current='page' href='./?page=<?=$navElement?>'> <?=$navElement?></a>
                     </li>

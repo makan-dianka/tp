@@ -22,9 +22,8 @@
             if (is_file($path)) {
                 include "./content/${page}.php";
             } else {
-            echo "404.<br /> cette page n'existe pas ";
+                include "./error/404.php";
             }
-        
         ?>
        
         
