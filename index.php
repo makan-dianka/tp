@@ -8,7 +8,26 @@
         <?php include ("./template/bootstrap.php"); ?>
     </head>
     <body>
-        <?php include ("./template/base.php"); ?>
+        <!-- include content -->
+        <?php 
+        
+        if (isset($_GET["page"])) {
+            $page = $_GET["page"]; 
+        } else {
+            $page = "home";
+        }
+        
+        $path = "./content/${page}.php";
+
+        if (is_file($path)) {
+            include "./content/${page}.php";
+        } else {
+           echo "404.<br /> cette page n'existe pas ";
+        }
+        
+        ?>
+       
+        
 
     </body>
 

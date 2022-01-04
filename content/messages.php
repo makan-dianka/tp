@@ -49,14 +49,14 @@
                         </thead>
 
                         <tbody>
-                            <!-- partie 1 non recommander-->
+                            <!-- partie 1. non recommander-->
                             <?php 
                                 foreach ($messages as $msg) {
                                     echo "<tr><td>" .  $msg["email"] . "</td><td>". $msg["message"] . "</td></tr>";
                                 }
                             ?> 
                             
-                            <!-- partie 2 falcultatif -->
+                            <!-- partie 2. falcultatif -->
                             <?php foreach ($messages as $i => $message) { ?>
                                 <tr>
                                     <td><?php echo $message['email']; ?></td>
@@ -65,7 +65,7 @@
                             <?php } ?>
 
                             
-                            <!-- partie 3 recommander -->
+                            <!-- partie 3. recommander -->
                             <?php foreach ($messages as $i => $message) : ?>
                                 <tr>
                                     <td><?php echo $message['email']; ?></td>

@@ -11,6 +11,7 @@
     <body>
         <?php include ("./template/base.php"); ?>
         <div class="container">
+            <!-- include content -->
             <div class="row">
                 <div class="col-md-4">
                 </div>
