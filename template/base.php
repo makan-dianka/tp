@@ -8,21 +8,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="?page=home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="?page=form">Form</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="?page=messages">Messages</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="?page=explorer">Explorer</a>
-                </li>
+                <?php
+                $path = "./content";
+                $navElements = scandir($path);
+                for($i = 2; $i < count($navElements); $i++):
+                    $navElement = str_replace(".php", "", $navElements[$i]); ?>
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link active' aria-current='page' href='./?page=<?=$navElement?>'> <?=$navElement?></a>
+                    </li>
+                <?php endfor ?>
             </ul>
         </div>
     </div>
 </nav>
-<!-- fin nav bar -->

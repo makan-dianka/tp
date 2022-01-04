@@ -11,15 +11,39 @@
     <?php include ("./template/base.php"); ?>
 
     <h2>Explorer :</h2>
-    <?php
-        $path = "content";
-        $content = scandir($path, $sorting_order = SCANDIR_SORT_ASCENDING, $context = null);
-        
-        print_r($content);
-    
+        <?php
 
-        $test = str_replace(".php", "", $content);
-        print_r($test);
-    ?>
+            $path_content = "./contents";
+
+            if (is_dir($path_content)) {
+
+                $content_dir = scandir($path_content);
+
+                foreach ($content_dir as $key => $file) {
+
+                    $path_file = "${path_content}/${file}";
+
+                    if (is_file($path_file)) {
+
+                        $keywords = explode(".", $file);
+                        $file_name = htmlspecialchars($keywords[0]);
+
+                        echo "<a href='./?page=${file_name}' class='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'>${file_name}</a>";
+                    }
+
+                    // Mettre option erreur (appel fonction 404)
+                }
+            } else {
+
+                $path_404 = "./contents/404.php";
+
+                if (is_file($path_404)) {
+                    include $path_404;
+                } else {
+                    echo "404";
+                }
+            }
+
+        ?>
 </body>
 </html>
