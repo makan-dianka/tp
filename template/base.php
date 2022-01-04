@@ -12,10 +12,14 @@
                     <a class="nav-link active" aria-current="page" href="?page=home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=form">Form</a>
+                    <a class="nav-link active" href="?page=form">Form</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=messages">Messages</a>
+                    <a class="nav-link active" href="?page=messages">Messages</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="?page=explorer">Explorer</a>
                 </li>
             </ul>
         </div>

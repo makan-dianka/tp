@@ -9,21 +9,21 @@
     </head>
     <body>
         <!-- include content -->
+        
         <?php 
-        
-        if (isset($_GET["page"])) {
-            $page = $_GET["page"]; 
-        } else {
-            $page = "home";
-        }
-        
-        $path = "./content/${page}.php";
+            if (isset($_GET["page"])) {
+                $page = $_GET["page"]; 
+            } else {
+                $page = "home";
+            }
+            
+            $path = "./content/${page}.php";
 
-        if (is_file($path)) {
-            include "./content/${page}.php";
-        } else {
-           echo "404.<br /> cette page n'existe pas ";
-        }
+            if (is_file($path)) {
+                include "./content/${page}.php";
+            } else {
+            echo "404.<br /> cette page n'existe pas ";
+            }
         
         ?>
        
