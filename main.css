@@ -1,0 +1,27 @@
+#form-bwb{
+    margin-top: 55px;
+}
+
+#msg{
+    margin-top: 55px;
+}
+
+#test{
+    margin-top: 55px;
+}
+
+#path{
+    color: green;
+}
+
+#bienvenue{
+    color: blue;
+}
+
+#err404 h1{
+    color: red;
+}
+
+#err500 h1{
+    color: red;
+}
