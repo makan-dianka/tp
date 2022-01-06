@@ -1,3 +1,6 @@
+<?php include "./functions/rendering.php" ?>
+<?php include "./functions/generics.php" ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,9 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulaire</title>
         <?php include ("./template/bootstrap.php"); ?>
+        <link rel="stylesheet" href="/main.css">
     </head>
     <body>
         <!-- include content -->
+        <?php include ("./template/base.php"); ?>
         
         <?php 
             if (isset($_GET["page"])) {
@@ -25,8 +30,6 @@
                 include "./error/404.php";
             }
         ?>
-       
-        
 
     </body>
 
