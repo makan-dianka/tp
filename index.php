@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <?php include "./functions/rendering.php" ?>
 <?php include "./functions/generics.php" ?>
 

@@ -1,6 +1,12 @@
+<?php 
+    if (!isset($_SESSION["messages"])) {
+        $_SESSION["messages"] = [];
+    }
+
+?>
+
 
 <?php 
-
     $messages = [
         array(
             "email" => "machin@truc.bd",
@@ -15,6 +21,15 @@
             "message" => "le message de merde de micro"
         )
     ];
+
+    if (!empty($_POST)) {
+                
+        $data = [
+            "email" => $_POST["email"], "message" => $_POST["message"]
+        ];
+
+        array_push($_SESSION["messages"], $_POST);
+        } 
 
 ?>
 
@@ -34,24 +49,8 @@
                 </thead>
 
                 <tbody>
-                    <!-- partie 1. non recommander-->
-                    <?php 
-                        foreach ($messages as $msg) {
-                            echo "<tr><td>" .  $msg["email"] . "</td><td>". $msg["message"] . "</td></tr>";
-                        }
-                    ?> 
-                    
-                    <!-- partie 2. falcultatif -->
-                    <?php foreach ($messages as $i => $message) { ?>
-                        <tr>
-                            <td><?php echo $message['email']; ?></td>
-                            <td><?= $message['message'] ?></td>
-                        </tr>
-                    <?php } ?>
-
-                    
                     <!-- partie 3. recommander -->
-                    <?php foreach ($messages as $i => $message) : ?>
+                    <?php foreach ($_SESSION["messages"] as $i => $message) : ?>
                         <tr>
                             <td><?php echo $message['email']; ?></td>
                             <td><?= $message['message'] ?></td>
