@@ -3,6 +3,7 @@
 <?php include "./functions/rendering.php" ?>
 <?php include "./functions/generics.php" ?>
 
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>

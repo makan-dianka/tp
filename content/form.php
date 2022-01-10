@@ -5,7 +5,7 @@
 
     <div class="col-md-4" id="form-bwb">
         <h2>Se connecter</h2>
-        <form method="POST" action="?page=messages">
+        <form method="POST" action="/functions/traitement.php">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

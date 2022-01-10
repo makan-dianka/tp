@@ -1,39 +1,3 @@
-<?php 
-    if (!isset($_SESSION["messages"])) {
-        $_SESSION["messages"] = [];
-    }
-
-?>
-
-
-<?php 
-    $messages = [
-        array(
-            "email" => "machin@truc.bd",
-            "message" => "le super message de machin"
-        ),
-        array(
-            "email" => "micro@loge.db",
-            "message" => "le message de merde de micro"
-        ),
-        array(
-            "email" => "stephane@gmail.com",
-            "message" => "le message de merde de micro"
-        )
-    ];
-
-    if (!empty($_POST)) {
-                
-        $data = [
-            "email" => $_POST["email"], "message" => $_POST["message"]
-        ];
-
-        array_push($_SESSION["messages"], $_POST);
-        } 
-
-?>
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-2">
@@ -65,3 +29,4 @@
         </div>
     </div>
 </div>
+
