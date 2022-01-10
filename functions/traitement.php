@@ -1,24 +1,19 @@
 <?php
-// commencement de la session
-session_start();
-
-// verifier si la session existe
-if (!isset($_SESSION["messages"])) {
-    $_SESSION["messages"] = [];
-}
-
 // verifier si post n'est pas vide
 if (!empty($_POST)) {
-    $data = [
-        "email" => $_POST["email"], "message" => $_POST["message"]
-    ];
+    
+    if (isset($_POST["email"]) && isset($_POST["password"])) {
 
-    array_push($_SESSION["messages"], $data);
-    } 
+        setcookie("nom", $_POST["nom"], time() + (60 * 60 * 24 * 30), '/');
+        setcookie("email", $_POST["email"], time() + (60 * 60 * 24 * 30), '/');
+        setcookie("password", $_POST["password"], time()+ (60 * 60 * 24 * 30), '/');
+  
+    }
 
+}
 
 
 // redirection de url
-header("Location: /?page=messages");
+header("Location: /?page=form");
 
-?> 
+?>

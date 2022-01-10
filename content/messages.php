@@ -14,12 +14,12 @@
 
                 <tbody>
                     <!-- partie 3. recommander -->
-                    <?php foreach ($_SESSION["messages"] as $i => $message) : ?>
+                    <!-- <?php foreach ($_SESSION["messages"] as $i => $message) : ?>
                         <tr>
                             <td><?php echo $message['email']; ?></td>
                             <td><?= $message['message'] ?></td>
                         </tr>
-                    <?php endforeach ?>
+                    <?php endforeach ?> -->
 
                 </tbody>
             </table>
@@ -29,4 +29,5 @@
         </div>
     </div>
 </div>
+
 

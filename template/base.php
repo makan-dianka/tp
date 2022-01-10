@@ -24,6 +24,16 @@
 
                 <?php endfor ?>
 
+                <form method="POST" action="?page=form" style="margin-left: 550px;">
+                    <label for="exampleInputEmail1" class="formlabel">Email</label>
+                    <input name="email" type="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+                        
+                    <label for="exampleInputPassword1" class="formlabel">mot de passe</label>
+                    <input name="password" type="password"  id="exampleInputPassword1">
+
+                    <button type="submit" class="btn btn-primary btn-sm">Connexion</button>
+                </form>
+
             </ul>
 
         </div>
