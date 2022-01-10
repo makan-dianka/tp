@@ -25,3 +25,37 @@
 #err500 h1{
     color: red;
 }
+
+.login {
+    margin: 5px;
+}
+
+.login a{
+    color: white;
+    text-decoration: none;
+}
+
+.mini-space{
+    margin-right: 50px;
+    background-color: green !important;
+}
+
+.mini-space a{
+    background-color:cadetblue;
+}
+
+#login-page{
+    margin-top: 150px;
+    background-color: yellow;
+}
+
+
+.login-body{
+    background-color: grey;
+}
+
+
+#reg-page {
+    margin-top: 150px;
+    background-color: green;
+}

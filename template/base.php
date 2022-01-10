@@ -21,20 +21,12 @@
                     <li class='nav-item'>
                         <a class='nav-link active' aria-current='page' href='./?page=<?=$navElement?>'> <?=$navElement?></a>
                     </li>
-
-                <?php endfor ?>
-
-                <form method="POST" action="?page=form" style="margin-left: 550px;">
-                    <label for="exampleInputEmail1" class="formlabel">Email</label>
-                    <input name="email" type="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
-                        
-                    <label for="exampleInputPassword1" class="formlabel">mot de passe</label>
-                    <input name="password" type="password"  id="exampleInputPassword1">
-
-                    <button type="submit" class="btn btn-primary btn-sm">Connexion</button>
-                </form>
+                <?php endfor ?>                
 
             </ul>
+
+            <p class="login"><a href="./auth/login.php" class="btn btn-primary">Connexion</a></p>
+            <p class="login mini-space"><a href="./auth/registration.php" class="btn btn-primary">Registration</a></p>
 
         </div>
     </div>
