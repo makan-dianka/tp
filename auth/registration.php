@@ -16,9 +16,9 @@
 
                 <div class="col-md-4" id="reg-page">
                     <h2>S'inscrire</h2>
-                    <form method="POST" action="/cookies/save.php">
+                    <form method="POST" action="/sessions/save.php">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nom</label>
+                            <label for="nom" class="form-label">Nom</label>
                             <input name='nom' placeholder="veuillez entrer votre nom"  type="nom" class="form-control" required>
                         </div>
 

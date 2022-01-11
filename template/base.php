@@ -24,9 +24,19 @@
                 <?php endfor ?>                
 
             </ul>
+            
+            <?php if (isset($_SESSION["dataUsers"])) : ?>
+               
+                <?= "<h5 style='margin:15px'>Hello {$_SESSION['dataUsers'][0]['nom']}</h5>"; ?>
+                <?="<a href='./sessions/destroy.php' class='btn btn-primary' style='margin-right: 50px;'>Deconxion</a>"; ?>
 
-            <p class="login"><a href="./auth/login.php" class="btn btn-primary">Connexion</a></p>
-            <p class="login mini-space"><a href="./auth/registration.php" class="btn btn-primary">Registration</a></p>
+            <?php elseif (isset($_COOKIE["nom"])) : ?>
+                
+            <?php else : ?>
+                <p class="login"><a href="./auth/login.php" class="btn btn-primary">Connexion</a></p>
+                <p class="login mini-space"><a href="./auth/registration.php" class="btn btn-primary">Registration</a></p>
+            <?php endif ?>
+
 
         </div>
     </div>

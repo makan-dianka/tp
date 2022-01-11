@@ -49,7 +49,7 @@
 
 
                     <h2>Se connecter</h2>
-                    <form method="POST" action="login.php">
+                    <form method="POST" action="#">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input name='email' placeholder="saisissez votre email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
