@@ -35,7 +35,9 @@
                                             echo "<h3 style='color:red;'>email or password incorrect!</h3> <br />";
                                         }
 
-                                    } 
+                                    } else {
+                                        echo "<p style='color:red;'>Vous n'êtes pas enregistré! Inscrivez-vous d'abord puis revenez sur cette page</p>";
+                                    }
 
                                 }
 
