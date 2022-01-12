@@ -1,7 +1,7 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Decouvert PHP</a>
+        <a class="navbar-brand" href="#"><img src='/assets/img/php.jpg' width="100"  height="60"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,8 @@
             <?php elseif (isset($_COOKIE["nom"])) : ?>
                 
             <?php else : ?>
-                <p class="login"><a href="./auth/login.php" class="btn btn-primary">Connexion</a></p>
-                <p class="login mini-space"><a href="./auth/registration.php" class="btn btn-primary">Registration</a></p>
+                <p class="login"><a href="?page=login" class="btn btn-primary">Connexion</a></p>
+                <p class="login mini-space"><a href="?page=registration" class="btn btn-primary">Registration</a></p>
             <?php endif ?>
 
 

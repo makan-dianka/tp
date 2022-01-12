@@ -1,6 +1,0 @@
-<!-- function generic -->
-<?php 
-
-
-
-?>
