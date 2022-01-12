@@ -1,0 +1,91 @@
+#form-bwb{
+    margin-top: 55px;
+}
+
+#msg{
+    margin-top: 55px;
+}
+
+#test{
+    margin-top: 55px;
+}
+
+#path{
+    color: green;
+}
+
+#bienvenue{
+    color: blue;
+}
+
+#err404 h1{
+    color: red;
+}
+
+#err500 h1{
+    color: red;
+}
+
+.login {
+    margin: 5px;
+}
+
+.login a{
+    color: white;
+    text-decoration: none;
+}
+
+.mini-space{
+    margin-right: 50px;
+    background-color: green !important;
+}
+
+.mini-space a{
+    background-color:cadetblue;
+}
+
+#login-page{
+    margin-top: 150px;
+    background-color: yellow;
+}
+
+
+.login-body{
+    background-color: grey;
+}
+
+
+#reg-page {
+    margin-top: 150px;
+    background-color: yellow;
+}
+
+.test-pierre {
+    margin-top: 250px;
+}
+
+.bdy-pierre {
+    background: grey;
+}
+
+.recherche {
+    color: white;
+}
+
+.form-research {
+    background-color: blue;
+    margin-top: 200px;
+    padding: 25px;
+}
+
+.sugg {
+    color: yellow;
+}
+
+#result {
+    color: white;
+}
+
+#not-find {
+    color: red;
+}
