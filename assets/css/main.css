@@ -89,3 +89,15 @@
 #not-find {
     color: red;
 }
+
+.body-sys {
+    background-color: blue;
+}
+
+#info {
+    margin-top: 55px;
+}
+
+#info h2{
+    color: white;
+}
