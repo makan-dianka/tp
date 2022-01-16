@@ -51,7 +51,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">Connexion</button> <br /> <br />
-                    <p>Vous n'avez pas un compte ? <a href='/auth/registration.php'>Inscrivez-vous</a></p>
+                    <p>Vous n'avez pas un compte ? <a href='./?page=registration'>Inscrivez-vous</a></p>
                 </form>
                 <p><a href='/' style='text-decoration: none;'>Home</a></p>
             </div>

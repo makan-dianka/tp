@@ -1,13 +1,23 @@
 #form-bwb{
     margin-top: 55px;
+    background-color: yellow;
+    padding: 25px;
 }
 
 #msg{
     margin-top: 55px;
 }
 
+#msg th{
+    color: yellow;
+}
+
 #test{
     margin-top: 55px;
+}
+
+#test h4{
+    color: white;
 }
 
 #path{
@@ -100,4 +110,20 @@
 
 #info h2{
     color: white;
+}
+
+.msg-form {
+    background-color: grey;
+}
+
+.home {
+    background-color: grey;
+}
+
+.display-msg {
+    background-color: grey;
+}
+
+.body-explorer {
+    background-color: grey;
 }

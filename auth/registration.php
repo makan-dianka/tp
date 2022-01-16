@@ -23,7 +23,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">S'inscrire</button> <br /> <br />
-                    <p>Vous avez déjà un compte ? <a href='/auth/login.php'>Connectez-vous</a></p>
+                    <p>Vous avez déjà un compte ? <a href='./?page=login'>Connectez-vous</a></p>
                 </form>
                 <p><a href='/' style='text-decoration: none;'>Home</a></p>
             </div>
