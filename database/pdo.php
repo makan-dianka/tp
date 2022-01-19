@@ -1,16 +1,15 @@
 <?php
-/* Connect to a MySQL database using driver invocation */
-// initiate connection & manage error
+    $DB_TYPE = 'mysql'; //Type of database<br>
+    $DB_HOST = '192.168.68.63:3399'; //Host name<br>
+    $DB_USER = 'root'; //Host Username<br>
+    $DB_PASS = '1234'; //Host Password<br>
+    $DB_NAME = 'tutoseu'; //Database name<br><br>
 
-try {
-    $dbh = new PDO('mysql:db=portofolio; host=127.0.0.1:3333', 'root', '1234');
-} catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
-}
 
-// $sql = "SELECT * FROM user;";
-// $sth = $dbh->prepare($sql);
-// $sth->execute();
-// $sth->fetchAll();
- 
-// var_dump($sth);
+    try {
+        
+        $CONN = new PDO("$DB_TYPE:host=$DB_HOST; dbname=$DB_NAME;", $DB_USER, $DB_PASS); // PDO Connection
+
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e -> getMessage();
+    }

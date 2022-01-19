@@ -1,3 +1,22 @@
+<?php 
+    // include "./database/pdo.php";
+
+    // if (isset($_POST["email"]) && isset($_POST["password"])) {
+
+    //     $encodepassword = password_hash($_POST["password"], PASSWORD_DEFAULT);
+    //     $sql = "SELECT email, mdp FROM login WHERE email='{$_POST['email']}'";
+    //     $request = $CONN -> prepare($sql);
+    //     $request -> execute();
+    //     $result = $request -> fetch();
+
+    //     if ()
+    //     var_dump($result);
+    // }
+?>
+
+
+
+
 <body class="login-body">
     <div class="container">
         <div class="row">
@@ -39,7 +58,7 @@
 
 
                 <h2>Se connecter</h2>
-                <form method="POST" action="#">
+                <form method="POST" action="./?page=login">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input name='email' placeholder="saisissez votre email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
