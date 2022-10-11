@@ -21,11 +21,11 @@ unset($files[1]);
 
                                 <?php if ($parent != "") : ?>
                                     <a href="?page=explorer&folder=<?= $parent?>" style="text-decoration: none; margin: 10px;"> 
-                                        <img src='/assets/img/retour.jpg' width='50' height='50'> Retour 
+                                        <img src='/php/assets/img/retour.jpg' width='50' height='50'> Retour 
                                     </a>
                                 <?php else : ?>
                                     <a href="?page=explorer" style="text-decoration: none; margin: 10px;"> 
-                                        <img src='/assets/img/retour.jpg' width='50' height='50'> Retour 
+                                        <img src='/php/assets/img/retour.jpg' width='50' height='50'> Retour 
                                     </a>
                                 <?php endif ?>
 
@@ -44,11 +44,11 @@ unset($files[1]);
 
                                 <?php if (is_dir($fullPath)) : ?>
                                     
-                                    <a href="?page=explorer&folder=<?= $fullPath?>" style="text-decoration: none;"> <img src='/assets/img/folder2.png' width='50' height='50'> <?= $file; ?> </a>
+                                    <a href="?page=explorer&folder=<?= $fullPath?>" style="text-decoration: none;"> <img src='/php/assets/img/folder2.png' width='50' height='50'> <?= $file; ?> </a>
 
                                 <?php else : ?>
 
-                                    <img src='/assets/img/file2.png' width='50' height='50'>
+                                    <img src='/php/assets/img/file2.png' width='50' height='50'>
                                     <?= $file; ?>
 
                                 <?php endif ?>
